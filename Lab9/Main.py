@@ -97,7 +97,6 @@ while not finished:
                 last_hit_time = time.time()
 
         if time.time() - last_spawn_time > TARGET_SPAWN_DELAY and len(targets) < 5:
-            print(1)
             last_spawn_time = time.time()
             target = bomber.strike()
             targets.append(target)
